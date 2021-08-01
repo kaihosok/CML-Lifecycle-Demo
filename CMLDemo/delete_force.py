@@ -46,7 +46,7 @@ def delete_lab(token, url):
     print("Lab stop ", response)
     url_wipe = url + api_call + "/wipe"
     response = requests.put(url_wipe,headers=headers,verify=False)
-    print("lab wipe ", response)
+    print("Lab wipe ", response)
     url_delete = url + api_call
     response = requests.delete(url_delete,headers=headers,verify=False)
     print("Lab delete",response)
